@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "04780b46-02fe-49b3-9818-2c951a02c892",
+		"name": "Test Istio API Calls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Ip - Istio - Admin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik5UQXhabU14TkRNeVpEZzNNVFUxWkdNME16RXpPREpoWldJNE5ETmxaRFUxT0dGa05qRmlNUSJ9.eyJhdWQiOiJodHRwOlwvXC9vcmcud3NvMi5hcGltZ3RcL2dhdGV3YXkiLCJzdWIiOiJhZG1pbiIsImFwcGxpY2F0aW9uIjp7ImlkIjoyLCJuYW1lIjoiSXN0aW9BcHAiLCJ0aWVyIjoiVW5saW1pdGVkIiwib3duZXIiOiJhZG1pbiJ9LCJzY29wZSI6ImFtX2FwcGxpY2F0aW9uX3Njb3BlIHNjb3BlX2hlYWRlcnMgc2NvcGVfaXAiLCJpc3MiOiJodHRwczpcL1wvbG9jYWxob3N0Ojk0NDNcL29hdXRoMlwvdG9rZW4iLCJrZXl0eXBlIjoiUFJPRFVDVElPTiIsInN1YnNjcmliZWRBUElzIjpbeyJuYW1lIjoiSHR0cGJpbkFQSSIsImNvbnRleHQiOiJcL2h0dHBiaW5cLzEuMC4wIiwidmVyc2lvbiI6IjEuMC4wIiwicHVibGlzaGVyIjoiYWRtaW4iLCJzdWJzY3JpcHRpb25UaWVyIjoiQnJvbnplIiwic3Vic2NyaWJlclRlbmFudERvbWFpbiI6ImNhcmJvbi5zdXBlciJ9XSwiY29uc3VtZXJLZXkiOiJJMTI3NGswSlB4aFdFXzc5RVhsT0ZoaGdQdjhhIiwiZXhwIjozNzIwOTg1NTA4LCJpYXQiOjE1NzM1MDE4NjE2NTIsImp0aSI6IjBjYmFkNmE0LTI1YjAtNDg0OS1iYjQ3LWNhMTgzMmRjNTcxNyJ9.AUK8ylBUTaWthcZr17y8w4iJRfMQgUo_MV-SFm-HITQ1XT_BuEd77yYpPJzhqHq035oavd2Z5rqi0idbvJjXOyLKB-cl2EuF4zgU80M1zv1Eeei08t4PxQ3FjCMuwRn7WjUX_1BK_YQKgy7K_FDfBuHINXxsgKqfqPiMBa9SrKG_c7wN-jKigjIJXhuMfgipDzEhbu9lcC6oCOiuNa2uI4_AJFj_w4uoVFdRkiICNc-sAEcxXeQ9Wb0CrGV99hTMjIJk8PNPatCB8CnSGy3ilnFt1xeN4XD2-kB8o1CrWZfAi7rVbQI2sQFMbrpmQi_w_9hwlx5isIlGdW66G3xzAQ==",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/ip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Ip - Istio - Fabio",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "30126afb-d0a0-34bc-9416-17c909995adc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/ip",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"ip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Headers - Istio - Admin",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik5UQXhabU14TkRNeVpEZzNNVFUxWkdNME16RXpPREpoWldJNE5ETmxaRFUxT0dGa05qRmlNUSJ9.eyJhdWQiOiJodHRwOlwvXC9vcmcud3NvMi5hcGltZ3RcL2dhdGV3YXkiLCJzdWIiOiJhZG1pbiIsImFwcGxpY2F0aW9uIjp7ImlkIjoyLCJuYW1lIjoiSXN0aW9BcHAiLCJ0aWVyIjoiVW5saW1pdGVkIiwib3duZXIiOiJhZG1pbiJ9LCJzY29wZSI6ImFtX2FwcGxpY2F0aW9uX3Njb3BlIHNjb3BlX2hlYWRlcnMgc2NvcGVfaXAiLCJpc3MiOiJodHRwczpcL1wvbG9jYWxob3N0Ojk0NDNcL29hdXRoMlwvdG9rZW4iLCJrZXl0eXBlIjoiUFJPRFVDVElPTiIsInN1YnNjcmliZWRBUElzIjpbeyJuYW1lIjoiSHR0cGJpbkFQSSIsImNvbnRleHQiOiJcL2h0dHBiaW5cLzEuMC4wIiwidmVyc2lvbiI6IjEuMC4wIiwicHVibGlzaGVyIjoiYWRtaW4iLCJzdWJzY3JpcHRpb25UaWVyIjoiQnJvbnplIiwic3Vic2NyaWJlclRlbmFudERvbWFpbiI6ImNhcmJvbi5zdXBlciJ9XSwiY29uc3VtZXJLZXkiOiJJMTI3NGswSlB4aFdFXzc5RVhsT0ZoaGdQdjhhIiwiZXhwIjozNzIwOTg1NTA4LCJpYXQiOjE1NzM1MDE4NjE2NTIsImp0aSI6IjBjYmFkNmE0LTI1YjAtNDg0OS1iYjQ3LWNhMTgzMmRjNTcxNyJ9.AUK8ylBUTaWthcZr17y8w4iJRfMQgUo_MV-SFm-HITQ1XT_BuEd77yYpPJzhqHq035oavd2Z5rqi0idbvJjXOyLKB-cl2EuF4zgU80M1zv1Eeei08t4PxQ3FjCMuwRn7WjUX_1BK_YQKgy7K_FDfBuHINXxsgKqfqPiMBa9SrKG_c7wN-jKigjIJXhuMfgipDzEhbu9lcC6oCOiuNa2uI4_AJFj_w4uoVFdRkiICNc-sAEcxXeQ9Wb0CrGV99hTMjIJk8PNPatCB8CnSGy3ilnFt1xeN4XD2-kB8o1CrWZfAi7rVbQI2sQFMbrpmQi_w_9hwlx5isIlGdW66G3xzAQ==",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/headers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"headers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Headers - Istio - Fabio",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "30126afb-d0a0-34bc-9416-17c909995adc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/headers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"headers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Delay - Istio",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "706d4f11-aba9-353c-ba13-cbc5101ce041",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/delay/.2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"delay",
+						".2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Delay - Istio - Fabio",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "30126afb-d0a0-34bc-9416-17c909995adc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/delay/.3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"delay",
+						".3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
